@@ -1,0 +1,313 @@
+# Instincts generated from https://github.com/canstralian/github-action-app
+# Generated: 2026-03-09T19:05:16.016Z
+# Version: 2.0
+
+---
+id: github-action-app-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/canstralian/github-action-app
+---
+
+# Github Action App Commit Length
+
+## Action
+
+Keep commit messages concise (under 50 characters)
+
+## Evidence
+
+- Average commit message length: 46 chars
+- Based on 6 commits
+
+---
+id: github-action-app-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/canstralian/github-action-app
+---
+
+# Github Action App Naming Files
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: kebab-case
+
+---
+id: github-action-app-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/canstralian/github-action-app
+---
+
+# Github Action App Export Style
+
+## Action
+
+Prefer mixed exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: mixed
+
+---
+id: github-action-app-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/canstralian/github-action-app
+---
+
+# Github Action App Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: github-action-app-workflow-documentation-refinement
+trigger: "when doing documentation refinement"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/canstralian/github-action-app
+---
+
+# Github Action App Workflow Documentation Refinement
+
+## Action
+
+Follow the documentation-refinement workflow:
+1. Create initial documentation
+2. Make iterative updates
+3. Apply AI assistant suggestions
+4. Merge pull request with final changes
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: CLAUDE.md, docs/*.md
+
+---
+id: github-action-app-file-naming
+trigger: "When creating new files"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App File Naming
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Pattern observed in existing file structure
+- Consistent with TypeScript project conventions
+
+---
+id: github-action-app-function-naming
+trigger: "When defining functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Function Naming
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- TypeScript language convention
+- Consistent with codeStyle analysis
+
+---
+id: github-action-app-class-naming
+trigger: "When defining classes"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Class Naming
+
+## Action
+
+Use PascalCase naming convention
+
+## Evidence
+
+- TypeScript language convention
+- Consistent with codeStyle analysis
+
+---
+id: github-action-app-constants-naming
+trigger: "When defining constants"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Constants Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE naming convention
+
+## Evidence
+
+- TypeScript language convention
+- Consistent with codeStyle analysis
+
+---
+id: github-action-app-commit-format
+trigger: "When making commits"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Commit Format
+
+## Action
+
+Use conventional commit format with type prefix (feat:, docs:)
+
+## Evidence
+
+- feat: add Copilot/Codex guide and CI workflow templates
+- docs: update repository structure to reflect actual state
+- docs: add CLAUDE.md with codebase guide for AI assistants
+
+---
+id: github-action-app-commit-length
+trigger: "When writing commit messages"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Commit Length
+
+## Action
+
+Keep commit messages around 46 characters on average
+
+## Evidence
+
+- Average commit message length of 46 characters observed
+- Consistent pattern across multiple commits
+
+---
+id: github-action-app-docs-workflow
+trigger: "When documentation needs to be created or updated"
+confidence: 0.75
+domain: workflow
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Docs Workflow
+
+## Action
+
+Create initial documentation, make iterative updates, apply AI suggestions, then merge via pull request
+
+## Evidence
+
+- documentation-refinement workflow pattern
+- CLAUDE.md creation and updates
+- Pull request #1 for documentation structure
+
+---
+id: github-action-app-ci-structure
+trigger: "When setting up CI/CD workflows"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Ci Structure
+
+## Action
+
+Create separate workflow files for quality-gate, release, and security-scan
+
+## Evidence
+
+- .github/workflows/quality-gate.yml
+- .github/workflows/release.yml
+- .github/workflows/security-scan.yml
+
+---
+id: github-action-app-test-separation
+trigger: "When organizing test files"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Test Separation
+
+## Action
+
+Keep tests in separate directories from source code
+
+## Evidence
+
+- testLocation: separate in architecture analysis
+- Single-package structure with separate test organization
+
+---
+id: github-action-app-ai-documentation
+trigger: "When working with AI assistants"
+confidence: 0.8
+domain: workflow
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Ai Documentation
+
+## Action
+
+Maintain CLAUDE.md file with codebase guide for AI context
+
+## Evidence
+
+- docs: add CLAUDE.md with codebase guide for AI assistants
+- Update CLAUDE.md
+- AI-assisted documentation refinement pattern
+
