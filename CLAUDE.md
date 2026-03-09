@@ -17,17 +17,10 @@ This project is in its initial state. Update this file as the codebase evolves.
 
 ```
 github-action-app/
-├── CLAUDE.md              # This file — AI assistant guide
-├── README.md              # Project documentation (user-facing)
-├── .github/
-│   └── workflows/         # GitHub Actions workflow definitions (.yml)
-├── src/                   # Application source code
-├── tests/                 # Test files
-├── package.json           # (if Node.js) or pyproject.toml / go.mod etc.
-└── .gitignore
+└── CLAUDE.md              # This file — AI assistant guide
 ```
 
-> Update this section to reflect the actual directory layout as the project grows.
+> This project is in its bootstrapping phase. The structure above reflects the current state. Update this section as files and directories are added.
 
 ---
 
@@ -167,8 +160,6 @@ When working in this repository as an AI assistant:
 | File/Path | Purpose |
 |-----------|---------|
 | `CLAUDE.md` | This guide — AI assistant context |
-| `README.md` | User-facing project documentation |
-| `.github/workflows/` | GitHub Actions workflow definitions |
 
 > Expand this table as significant files are added to the project.
 
@@ -178,4 +169,4 @@ When working in this repository as an AI assistant:
 
 - Open an issue on GitHub for bugs or feature requests.
 - Reference this file when onboarding new contributors or AI sessions.
-- Last updated: 2026-02-25
+- Last updated: 2026-03-09
