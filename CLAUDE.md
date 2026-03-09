@@ -20,7 +20,7 @@ github-action-app/
 └── CLAUDE.md              # This file — AI assistant guide
 ```
 
-> This project is in its bootstrapping phase. The structure above reflects the current state. Update this section as files and directories are added.
+> This project is in its bootstrapping phase. The structure above reflects the current state (only `CLAUDE.md`). Later sections may reference example paths like `.github/workflows/`, `src/`, or `tests/`; those are illustrative and may not exist yet. Update this section as files and directories are added.
 
 ---
 
