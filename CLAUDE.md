@@ -169,4 +169,4 @@ When working in this repository as an AI assistant:
 
 - Open an issue on GitHub for bugs or feature requests.
 - Reference this file when onboarding new contributors or AI sessions.
-- Last updated: 2026-03-09
+- Last updated: 2024-03-09
