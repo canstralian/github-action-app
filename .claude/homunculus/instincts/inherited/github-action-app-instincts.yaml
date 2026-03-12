@@ -1,0 +1,388 @@
+# Instincts generated from https://github.com/canstralian/github-action-app
+# Generated: 2026-03-12T03:50:23.389Z
+# Version: 2.0
+
+---
+id: github-action-app-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/canstralian/github-action-app
+---
+
+# Github Action App Commit Length
+
+## Action
+
+Keep commit messages concise (under 50 characters)
+
+## Evidence
+
+- Average commit message length: 46 chars
+- Based on 8 commits
+
+---
+id: github-action-app-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/canstralian/github-action-app
+---
+
+# Github Action App Naming Files
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: kebab-case
+
+---
+id: github-action-app-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/canstralian/github-action-app
+---
+
+# Github Action App Export Style
+
+## Action
+
+Prefer mixed exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: mixed
+
+---
+id: github-action-app-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/canstralian/github-action-app
+---
+
+# Github Action App Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: github-action-app-workflow-ai-collaborative-documentation
+trigger: "when doing ai collaborative documentation"
+confidence: 0.7
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/canstralian/github-action-app
+---
+
+# Github Action App Workflow Ai Collaborative Documentation
+
+## Action
+
+Follow the ai-collaborative-documentation workflow:
+1. Initial documentation creation/update
+2. AI assistant suggests changes via co-authored commit
+3. Multiple AI assistants may contribute sequentially
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~4x per month
+- Files: docs/*.md, CLAUDE.md
+
+---
+id: github-action-app-workflow-documentation-iteration
+trigger: "when doing documentation iteration"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/canstralian/github-action-app
+---
+
+# Github Action App Workflow Documentation Iteration
+
+## Action
+
+Follow the documentation-iteration workflow:
+1. Initial documentation commit
+2. Follow-up updates to same file
+3. Additional refinements based on feedback
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: *.md, docs/*.md
+
+---
+id: github-action-app-kebab-case-files
+trigger: "When creating new files"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Kebab Case Files
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Pattern observed in existing file structure
+- TypeScript project with consistent naming
+
+---
+id: github-action-app-camel-case-functions
+trigger: "When defining functions in TypeScript"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Camel Case Functions
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- TypeScript language conventions
+- Detected codeStyle patterns
+
+---
+id: github-action-app-pascal-case-classes
+trigger: "When defining classes in TypeScript"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Pascal Case Classes
+
+## Action
+
+Use PascalCase naming convention
+
+## Evidence
+
+- TypeScript language conventions
+- Detected codeStyle patterns
+
+---
+id: github-action-app-screaming-snake-constants
+trigger: "When defining constants in TypeScript"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Screaming Snake Constants
+
+## Action
+
+Use SCREAMING_SNAKE_CASE naming convention
+
+## Evidence
+
+- TypeScript language conventions
+- Detected codeStyle patterns
+
+---
+id: github-action-app-github-workflows-testing
+trigger: "When setting up testing infrastructure"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Github Workflows Testing
+
+## Action
+
+Create separate GitHub Actions workflows for quality gate, release, and security scanning
+
+## Evidence
+
+- Existing workflows: quality-gate.yml, release.yml, security-scan.yml
+
+---
+id: github-action-app-separate-test-location
+trigger: "When organizing test files"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Separate Test Location
+
+## Action
+
+Keep tests in separate location from source code
+
+## Evidence
+
+- Architecture shows testLocation: separate
+
+---
+id: github-action-app-feat-prefix
+trigger: "When adding new features"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Feat Prefix
+
+## Action
+
+Use 'feat:' prefix in commit messages
+
+## Evidence
+
+- feat: add Copilot/Codex guide and CI workflow templates
+
+---
+id: github-action-app-docs-prefix
+trigger: "When updating documentation"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Docs Prefix
+
+## Action
+
+Use 'docs:' prefix in commit messages
+
+## Evidence
+
+- docs: update repository structure to reflect actual state
+- docs: add CLAUDE.md with codebase guide for AI assistants
+
+---
+id: github-action-app-commit-length-46
+trigger: "When writing commit messages"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Commit Length 46
+
+## Action
+
+Keep commit message length around 46 characters average
+
+## Evidence
+
+- Average commit length: 46 characters across analyzed commits
+
+---
+id: github-action-app-ai-collab-docs
+trigger: "When documentation needs refinement or AI assistants suggest improvements"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Ai Collab Docs
+
+## Action
+
+Initiate collaborative documentation workflow with AI co-authored commits
+
+## Evidence
+
+- Workflow frequency: 4x/month
+- Files: docs/*.md, CLAUDE.md
+- Pattern of AI collaborative commits
+
+---
+id: github-action-app-iterative-docs
+trigger: "When documentation requires multiple refinements or corrections"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Iterative Docs
+
+## Action
+
+Use iterative documentation update workflow with multiple sequential commits
+
+## Evidence
+
+- Workflow frequency: 2x/month
+- Pattern of multiple updates to same documentation files
+
+---
+id: github-action-app-docs-folder-structure
+trigger: "When organizing documentation"
+confidence: 0.9
+domain: architecture
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Docs Folder Structure
+
+## Action
+
+Place documentation in dedicated docs/ folder
+
+## Evidence
+
+- Common folders include docs/
+- Multiple workflow references to docs/*.md files
+
+---
+id: github-action-app-github-folder-workflows
+trigger: "When setting up CI/CD"
+confidence: 0.9
+domain: architecture
+source: repo-analysis
+source_repo: canstralian/github-action-app
+---
+
+# Github Action App Github Folder Workflows
+
+## Action
+
+Use .github/workflows/ for GitHub Actions configuration
+
+## Evidence
+
+- Config files: .github/workflows/quality-gate.yml, release.yml, security-scan.yml
+
