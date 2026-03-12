@@ -1,0 +1,51 @@
+name: security-scan
+
+on:
+  pull_request:
+    branches: [main, develop]
+  schedule:
+    - cron: '0 6 * * 1'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Dependency audit
+        run: |
+          npm audit --audit-level=high --json > audit-report.json || true
+
+      - name: Check audit results
+        run: |
+          if jq -e '[.vulnerabilities | to_entries[] | select(.value.severity == "high" or .value.severity == "critical")] | length > 0' audit-report.json > /dev/null 2>&1; then
+            echo "::error::High/critical vulnerabilities found"
+            jq '.vulnerabilities | to_entries[] | select(.value.severity == "high" or .value.severity == "critical") | {name: .key, severity: .value.severity, via: .value.via}' audit-report.json
+            exit 1
+          fi
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: javascript-typescript
+
+      - name: Analyze
+        uses: github/codeql-action/analyze@v3
