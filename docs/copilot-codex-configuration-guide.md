@@ -1,8 +1,8 @@
-# Copilot + Codex Configuration Guide for Trading Bot Swarm
+# Copilot + Codex Configuration Guide for GitHub Action Application Repositories
 
 ## 1) Purpose and Scope
 
-This guide standardizes how GitHub Copilot and Codex are configured and used across the Trading Bot Swarm ecosystem.
+This guide standardizes how GitHub Copilot and Codex are configured and used across repositories bootstrapped from the `canstralian/github-action-app` template (including ecosystems such as Trading Bot Swarm that adopt this template).
 
 The goal is to ensure that AI-assisted development is:
 
