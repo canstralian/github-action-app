@@ -263,6 +263,9 @@ jobs:
         with:
           languages: javascript
 
+      - name: Install dependencies
+        run: npm ci
+
       - name: CodeQL Analyze
         uses: github/codeql-action/analyze@v3
 ```
