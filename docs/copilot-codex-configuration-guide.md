@@ -158,6 +158,9 @@ name: quality-gate
 on:
   pull_request:
     branches: [main, develop]
+    paths-ignore:
+      - 'docs/**'
+      - '**.md'
   push:
     branches: [main]
 
